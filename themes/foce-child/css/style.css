@@ -46,6 +46,6 @@
     }
 }
 
-h2::after, .story__article::after, #studio h2::before, #studio h2::after, .site-footer ul::after {
-    animation: flowersRotation 20s infinite linear;
+h2::after, .story__article::after, #studio h2::before, #studio h2::after, .site-footer::before, .site-footer::after, .site-footer ul::after {
+    animation: flowersRotation 30s infinite linear;
 }

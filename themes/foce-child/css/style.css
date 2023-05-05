@@ -1,0 +1,51 @@
+/* effet d’apparition en fade in - du haut vers le bas */
+@keyframes fadeInDown {
+    from{
+        transform : translateY(-200px);
+		opacity: 0;
+    }
+    to{
+        transform: translateY(0);
+		opacity: 1;
+    }
+}
+
+.banner{
+    animation: fadeInDown 2s; /* fade in du haut vers le bas */
+    overflow-x: hidden;   
+    overflow-y: auto;
+    perspective: 1px;
+    margin-bottom: 117px;
+    height: 50em;
+}
+
+/* effet d’apparition en fade in - du bas vers le haut */
+@keyframes fadeInUp {
+    from{
+        transform : translateY(300px);
+		opacity: 0;
+    }
+    to{
+        transform: translateY(0);
+		opacity: 1;
+    }
+}
+
+.story, #studio, h3 {
+	animation: fadeInUp 2s ease-in-out; /* fade in du bas vers le haut */
+}
+
+
+/* effet de fleurs qui tournent en continu */
+@keyframes flowersRotation {
+    from{
+        transform: rotate(0turn);
+    }
+    to{
+        transform: rotate(1turn);
+    }
+}
+
+h2::after, .story__article::after, #studio h2::before, #studio h2::after, .site-footer ul::after {
+    animation: flowersRotation 20s infinite linear;
+}

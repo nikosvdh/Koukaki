@@ -1,14 +1,10 @@
-<?php
-
-?>
-
 <section>
     <div class="oscars_div">
         <p class="oscars_text">
             Fleurs d'oranger & chats errants est nominé aux Oscars Short Film Animated de 2023 !
         </p>
         <img class="oscars_img"
-            src="wp-content/themes/foce-child/assets/images/18-courts-metrages-francais-d-animation-eligibles-aux-oscars-2021 1.png"
+            src="wp-content/themes/foce-child/assets/images/18-courts-metrages-francais-d-animation-eligibles-aux-oscars-2023.png"
             alt="logo des Oscars Short Film Animated 2023" />
     </div>
 </section>

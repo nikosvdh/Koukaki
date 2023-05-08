@@ -46,6 +46,68 @@
     }
 }
 
-h2::after, .story__article::after, #studio h2::before, #studio h2::after, .site-footer::before, .site-footer::after, .site-footer ul::after {
+h2::after, .story__article::after, #studio h2::before, #studio h2::after, .site-footer::before, .site-footer::after, .site-footer ul::after, .sunflower, .orchid {
     animation: flowersRotation 30s infinite linear;
+}
+
+/* effet d'apparition des titres des sections h2 et h3 */ 
+.titleVisibility {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+span {
+    transition: transform 1s, opacity 0.5s, translateY 1s;
+}
+
+span:not(.titleVisibility){
+    opacity: 0;
+    transform: translateY(50px);
+}
+
+/* section nomination aux Oscars */
+
+.oscars_div {
+    padding-top: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.oscars_text {
+    font-family: "Quicksand";
+    font-size: 42px;
+    font-weight: 700;
+    height: 280px;
+    width: 723px;
+    color: #FFF5E9;
+    background-image: url("../assets/images/Rectangle23.png");
+    background-repeat: no-repeat;
+    padding-top: 40px;
+    padding-left: 48px;
+}
+
+.oscars_img{
+    padding-bottom: 103px;
+}
+
+/* déplacement des fleurs du footer vers la section studio */
+.sunflower {
+	position: absolute;
+	left: 6em;
+	top: 33em;
+}
+
+.orchid{
+	position: absolute;
+	right: -4em;
+	bottom: -9.2em;
+}
+    
+.site-footer::before {
+	content: url("");
+}
+
+.site-footer::after {
+	content: url("");
 }

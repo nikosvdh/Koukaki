@@ -31,7 +31,7 @@
     }
 }
 
-.story, #studio, h3 {
+.story, #studio, h3, span {
 	animation: fadeInUp 2s ease-in-out; /* fade in du bas vers le haut */
 }
 
@@ -48,21 +48,6 @@
 
 h2::after, .story__article::after, #studio h2::before, #studio h2::after, .site-footer::before, .site-footer::after, .site-footer ul::after, .sunflower, .orchid {
     animation: flowersRotation 30s infinite linear;
-}
-
-/* effet d'apparition des titres des sections h2 et h3 */ 
-.titleVisibility {
-    opacity: 1;
-    transform: translateY(0);
-}
-
-span {
-    transition: transform 1s, opacity 0.5s, translateY 1s;
-}
-
-span:not(.titleVisibility){
-    opacity: 0;
-    transform: translateY(50px);
 }
 
 /* section nomination aux Oscars */
@@ -110,4 +95,19 @@ span:not(.titleVisibility){
 
 .site-footer::after {
 	content: url("");
+}
+
+/* effet d'apparition des titres h2 et h3 des sections */ 
+.title_isvisible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+span {
+    transition: transform 1s, opacity 0.5s, translateY 1s;
+}
+
+span:not(.title_isvisible){
+    opacity: 0;
+    transform: translateY(50px);
 }

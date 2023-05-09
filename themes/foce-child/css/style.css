@@ -50,8 +50,8 @@ h2::after, .story__article::after, #studio h2::before, #studio h2::after, .site-
     animation: flowersRotation 30s infinite linear;
 }
 
-/* section nomination aux Oscars */
 
+/* section nomination aux Oscars */
 .oscars_div {
     padding-top: 80px;
     display: flex;
@@ -76,6 +76,7 @@ h2::after, .story__article::after, #studio h2::before, #studio h2::after, .site-
     padding-bottom: 103px;
 }
 
+
 /* déplacement des fleurs du footer vers la section studio */
 .sunflower {
 	position: absolute;
@@ -97,6 +98,7 @@ h2::after, .story__article::after, #studio h2::before, #studio h2::after, .site-
 	content: url("");
 }
 
+
 /* effet d'apparition des titres h2 et h3 des sections */ 
 .title_isvisible {
     opacity: 1;
@@ -111,3 +113,20 @@ span:not(.title_isvisible){
     opacity: 0;
     transform: translateY(50px);
 }
+
+
+/* titre sur vidéo en background */ 
+.banner {
+    position: relative;
+    height: 806px;
+}
+.banner img {
+    position: absolute;
+    height: 479px;
+    width: auto;
+    top: 200px;
+	animation: float 5s cubic-bezier(0.43, 0.08, 0.61, 0.99) infinite;
+}
+
+
+/* animation titre sur vidéo en background */ 

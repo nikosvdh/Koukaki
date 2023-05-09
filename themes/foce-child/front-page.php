@@ -7,7 +7,7 @@ get_header();
     <section class="banner">
         <video class="banner-video" autoplay loop muted
             poster="wp-content/themes/foce-child/assets/images/Studio Koukaki-image header 1.png"
-            src="wp-content/themes/foce-child/assets/video/Studio+Koukaki-vidéo+header+sans+son+(1).mp4"
+            src="https://course.oc-static.com/projects/D%C3%A9veloppeur+Web/DWP+IW_P9+Studio+d'animation/Studio+Koukaki-vide%CC%81o+header+sans+son+(1).mp4"
             type="video/mp4">
         </video>
         <img src="<?php echo get_template_directory_uri() . '/assets/images/logo.png'; ?> "

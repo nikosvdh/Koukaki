@@ -1,5 +1,4 @@
 // EFFET D'APPARITION DES TITRES DES SECTIONS
-
 const titles = document.getElementsByTagName('span') // on récupère l'élément qu'on souhaite observer
 // on observe les changements d'intersection d'un élément cible avec un élément ancêtre
 const observer = new IntersectionObserver(entries => {
@@ -22,7 +21,6 @@ observer.observe(title) // on indique à l'observer le nouvel élément à track
 
 
 // EFFET DE PARALLAX DU TITRE SUR LA VIDEO
-
 let title = document.getElementById('title');
 
 window.addEventListener('scroll', () => {
@@ -31,3 +29,17 @@ window.addEventListener('scroll', () => {
     title.style.marginTop = value / 2 + "px";
 });
 
+
+// CARROUSEL PERSONNAGES
+const swiper = new Swiper(".swiper", {
+  effect: "coverflow",
+  spaceBetween: 40,
+  slidesPerView: "auto",
+  coverflowEffect: {
+    rotate: 40,
+    stretch: 0,
+    depth: 50,
+    modifier: 1,
+    slideShadows: true,
+  },
+});

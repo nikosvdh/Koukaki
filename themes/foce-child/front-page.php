@@ -10,7 +10,7 @@ get_header();
             src="wp-content/themes/foce-child/assets/video/Studio+Koukaki-vidéo+header+sans+son+(1).mp4"
             type="video/mp4">
         </video>
-        <img src="<?php echo get_template_directory_uri() . '/assets/images/logo.png'; ?> "
+        <img id="title" src="<?php echo get_template_directory_uri() . '/assets/images/logo.png'; ?> "
             alt="logo Fleurs d'oranger & chats errants">
     </section>
     <section id="#story" class="story">

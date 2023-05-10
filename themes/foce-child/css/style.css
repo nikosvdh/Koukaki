@@ -130,7 +130,6 @@ span:not(.title_isvisible){
 
 
 /* effet de flottement du titre sur la vidéo */ 
-
 @keyframes float {
 	0% {
 		transform: translate(0px, -15px);
@@ -156,7 +155,6 @@ span:not(.title_isvisible){
 
 
 /* Carrousel Personnages */
-
 .swiper {
     max-width: 100%;
     padding-top: 50px;
@@ -173,4 +171,10 @@ span:not(.title_isvisible){
   .swiper-slide img {
     display: block;
     width: 100%;
+  }
+
+  .main-character h3 { /* réglage de la position du titre */
+    background-position: left;
+    text-align: left;
+    padding-left: 50px;
   }

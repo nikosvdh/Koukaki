@@ -178,3 +178,28 @@ span:not(.title_isvisible){
     text-align: left;
     padding-left: 50px;
   }
+
+
+/* Ajouts des nuages */
+
+.story #place {
+	background-image: url("../assets/images/Studio_Koukaki-image_place.png");
+    background-size: cover;
+}
+
+/* Petit nuage */
+ #little_cloud {
+    position: absolute;
+    top: 75%;
+	left: calc(55%);
+    filter: drop-shadow(0px 0px 20px #C0F7FF);
+}
+
+/* Gros nuage */
+#big_cloud {
+    position: absolute;
+    top: 65%;
+    display: block;
+	left: calc(72%);
+    filter: drop-shadow(0px 0px 20px #C0F7FF);
+}

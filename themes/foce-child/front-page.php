@@ -63,6 +63,9 @@ get_header();
                 <h3><span>Le Lieu</span></h3>
                 <p><?php echo get_theme_mod('place'); ?></p>
             </div>
+            <img id="big_cloud" src="wp-content/themes/foce-child/assets/images/big_cloud.png" alt="gros nuage" />
+            <img id="little_cloud" src="wp-content/themes/foce-child/assets/images/little_cloud.png"
+                alt="petit nuage" />
 
         </article>
     </section>

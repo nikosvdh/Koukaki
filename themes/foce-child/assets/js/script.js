@@ -20,7 +20,7 @@ observer.observe(title) // on indique à l'observer le nouvel élément à track
 }
 
 
-// EFFET DE PARALLAX DU TITRE SUR LA VIDEO
+// PARALLAX/EFFET DE DÉPLACEMENT DU TITRE SUR LA VIDEO
 let title = document.getElementById('title');
 
 window.addEventListener('scroll', () => {
@@ -43,3 +43,12 @@ const swiper = new Swiper(".swiper", {
     slideShadows: true,
   },
 });
+
+
+// PARALLAX/EFFET DE DÉPLACEMENT DES NUAGES AU SCROLL AVEC SKROLLR
+
+var s = skrollr.init();
+
+if (s.isMobile()) { // si skrollr est actif en version mobile
+s.destroy(); // on remet les attributs de classe et de style à leur valeur d'origine
+}

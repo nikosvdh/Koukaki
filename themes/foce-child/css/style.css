@@ -190,16 +190,15 @@ span:not(.title_isvisible){
 /* Petit nuage */
  #little_cloud {
     position: absolute;
-    top: 75%;
-	left: calc(55%);
+    bottom: 380px;
+    right: 40%;  
     filter: drop-shadow(0px 0px 20px #C0F7FF);
 }
 
 /* Gros nuage */
 #big_cloud {
     position: absolute;
-    top: 65%;
-    display: block;
-	left: calc(72%);
+    bottom: 515px;
+    right: 10%;
     filter: drop-shadow(0px 0px 20px #C0F7FF);
 }

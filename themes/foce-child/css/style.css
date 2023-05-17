@@ -202,3 +202,188 @@ span:not(.title_isvisible){
     right: 10%;
     filter: drop-shadow(0px 0px 20px #C0F7FF);
 }
+
+/* Menu Burger */
+
+.menu-toggle {
+    display: block;
+    position: absolute;
+    left: 89%;
+    top: 13px;
+    padding: 0;
+    width: 45px;
+    height: 45px;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+}
+
+.main-navigation .line {
+	height: 2px;
+	background-color: #000;
+	display: block;
+	margin: auto;
+	margin-block: -2px;
+	width: 2.5em;
+    z-index: 9999;
+    position: relative;
+    transition: all .5s ease-in-out;
+}
+
+.first_line {
+    transform:translateY(-12px)
+  }
+  
+.third_line {
+    transform:translateY(12px)
+  }
+
+.site-title {
+    background-color: #FFD5A2;
+    max-width: 1440px;
+    padding-top: 25px;
+    display: block;
+    font-family: "Quicksand";
+    font-size: 1.3em;
+    font-weight: 700;
+    text-decoration: none;
+    text-align: center;
+  }
+
+.main-navigation {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 80px;
+    padding-left: 2%;
+    padding-right: 2%;
+}
+
+.main-navigation ul {
+	height: 100%;
+	display: none;
+	list-style: none;
+	padding-left: 50px;
+}
+
+.main-navigation li {
+    position: relative;
+    font-size: 4em;
+}
+
+.main-navigation > li {
+    font-family: 'Quicksand';
+    font-size: 21px;
+}
+
+/* .main-navigation > p{
+    font-size: 12px;
+    position: absolute;
+    top: 80em;
+    z-index: 9999;
+} */
+
+.open-nav .second_line {
+    width:0;
+    background: transparent;    
+  }
+
+.open-nav .first_line {
+    transform: rotate(45deg);
+  }
+
+.open-nav .third_line {
+    transform: rotate(-45deg);
+  }  
+
+.logo_navbar {
+    width: 154px;
+    position: absolute;
+    top: 37px;
+    left: 44%;
+    filter: drop-shadow(0px 0px 26.0937px rgba(255, 92, 0, 0.6));
+}
+
+.p_navbar {
+    bottom: 120px;
+    left: 45%;
+}
+  
+.img_navbar {
+    position: absolute;
+}
+
+.navbar-links{
+    background-color: #FFF5E9; 
+    padding-top: 140px;
+    position: absolute;
+    top: 80px;
+    text-align: center;
+    font-weight: 400;
+    width: 100%;
+    z-index: 1000;
+}
+
+.navbar-links > li {
+    max-width: 1440px;
+    padding-top: 57px;
+}
+
+.navbar-links li:hover {
+    text-shadow: 0 0 14px #FF5C00;
+}
+
+
+/* Ajout des chats et des fleurs dans le menu */
+
+.nav_story::before{
+    content: url("../assets/images/cat-purpul.png");
+    position: absolute;
+    max-width: 109px;
+    left: 13%;
+    top: 0;
+}
+
+.nav_place::after{
+    content: url("../assets/images/cat-grey.png");
+    position: absolute;
+    right: 15%;
+    top: 13px;
+}
+
+.nav_studio::before{
+    content: url("../assets/images/cat-yellow.png");
+    position: absolute;
+    left: 4%;
+    top: 174px;
+}
+
+.nav_story::after{
+    content: url("../assets/images/Sunflower.png");
+    position: absolute;
+    right: 14%;
+    top: -95px;
+}
+
+.nav_characters::after{
+    content: url("../assets/images/Random\ Flower.png");
+    position: absolute;
+    right: 0;
+    top: 89px;
+}
+
+.nav_place::before{
+    content: url("../assets/images/Flower.png");
+    position: absolute;
+    left: 6%;
+    top: 53px;
+}
+
+.nav_studio::after{
+    content: url("../assets/images/Hibiscus\ footer.png");
+    position: absolute;
+    top: 90px;
+    right: 0%;
+}
+
+ /* Effet de flottement des chats dans le menu */

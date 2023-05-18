@@ -243,12 +243,12 @@ span:not(.title_isvisible){
 
 .main-navigation.toggled .first_line {
     opacity: 1;
-    transform: rotate(-45deg) translate(0px, 0px);
+    transform: rotate(-45deg);
   }
 
 .main-navigation.toggled .third_line {
     opacity: 1;
-    transform: rotate(45deg) translate(0px, 0px);
+    transform: rotate(45deg);
   }
 
 .main-navigation.toggled .second_line {
@@ -297,20 +297,6 @@ span:not(.title_isvisible){
     top: 80em;
     z-index: 9999;
 }
-
-
-/* .open_nav .second_line {
-    width:0;
-    background: transparent;    
-  }
-
-.open_nav .first_line {
-    transform: rotate(45deg);
-  }
-
-.open_nav .third_line {
-    transform: rotate(-45deg);
-  } */
 
 .logo_navbar {
     width: 154px;

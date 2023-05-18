@@ -19,6 +19,10 @@
     height: 50em;
 }
 
+.main-navigation.toggled ul  {   /* fade in du haut vers le bas du menu burger déployé */
+    animation: fadeInDown 2s ease-in-out ;
+}
+
 /* effet d’apparition en fade in - du bas vers le haut */
 @keyframes fadeInUp {
     from{

@@ -10,7 +10,7 @@
     }
 }
 
-.banner{
+.banner {
     animation: fadeInDown 2s; /* fade in du haut vers le bas */
     overflow-x: hidden;   
     overflow-y: auto;
@@ -22,6 +22,7 @@
 .main-navigation.toggled ul  {   /* fade in du haut vers le bas du menu burger déployé */
     animation: fadeInDown 2s ease-in-out ;
 }
+
 
 /* effet d’apparition en fade in - du bas vers le haut */
 @keyframes fadeInUp {
@@ -218,8 +219,6 @@ span:not(.title_isvisible){
     padding: 0;
     width: 45px;
     height: 45px;
-    border: none;
-    background: transparent;
     cursor: pointer;
 }
 
@@ -230,7 +229,6 @@ span:not(.title_isvisible){
 	margin: auto;
 	margin-block: -2px;
 	width: 2.5em;
-    z-index: 9999;
     position: relative;
     transition: all .5s ease-in-out;
 }
@@ -288,17 +286,22 @@ span:not(.title_isvisible){
 .main-navigation li {
     position: relative;
     font-size: 4em;
+    background-color: #FFF5E9;
 }
 
 .main-navigation > li {
     font-family: 'Quicksand';
     font-size: 21px;
+    background-color: transparent;
 }
 
-.main-navigation > p{
+.main-navigation p {
+    background-color: aqua;
+}
+
+.main-navigation > p {
     font-size: 12px;
     position: absolute;
-    top: 80em;
     z-index: 9999;
 }
 
@@ -308,9 +311,10 @@ span:not(.title_isvisible){
     top: 37px;
     left: 44%;
     filter: drop-shadow(0px 0px 26.0937px rgba(255, 92, 0, 0.6));
+    z-index: 2;
 }
 
-.navbar_links {
+.navbar-links {
     background-color: #FFF5E9;
     padding-top: 140px;
     position: absolute;
@@ -321,18 +325,19 @@ span:not(.title_isvisible){
     z-index: 1000;
 }
 
-.navbar_links > li {
+.navbar-links > li {
     max-width: 1440px;
     padding-top: 57px;
 }
 
-.navbar_links li:hover {
+.navbar-links li:hover {
     text-shadow: 0 0 14px #FF5C00;
 }
 
 .nav_studio {
     margin-bottom: 2em;
 }
+
 
 /* Ajout des chats et des fleurs dans le menu */
 
@@ -356,6 +361,7 @@ span:not(.title_isvisible){
     position: absolute;
     right: 0;
     top: 89px;
+    z-index: 2;
 }
 
 .nav_place::before{
@@ -370,6 +376,7 @@ span:not(.title_isvisible){
     position: absolute;
     right: 15%;
     top: 13px;
+    z-index: 2;
 }
 
 .nav_studio::before{
@@ -386,11 +393,12 @@ span:not(.title_isvisible){
     right: 0%;
 }
 
-.navbar_links::before{
+.navbar-links::before{
     content: url("../assets/images/Orchid-1.png");
     position: absolute;
     left: 0px;
     top: 50px;
+    z-index: 2;
 }
 
 

@@ -35,7 +35,7 @@
                 </button>
                 <li class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>"
                         rel="home"><?php bloginfo( 'name' ); ?></a></li>
-                <ul class="navbar_links">
+                <ul class="navbar-links">
                     <img class="logo_navbar" src="wp-content/themes/foce-child/assets/images/LOGO.png"
                         alt="logo Fleurs d'oranger & chats errants">
                     <li class="nav_story"><a href="#story">Histoire</a></li>

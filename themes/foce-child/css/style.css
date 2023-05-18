@@ -295,10 +295,6 @@ span:not(.title_isvisible){
     background-color: transparent;
 }
 
-.main-navigation p {
-    background-color: aqua;
-}
-
 .main-navigation > p {
     font-size: 12px;
     position: absolute;
@@ -335,7 +331,7 @@ span:not(.title_isvisible){
 }
 
 .nav_studio {
-    margin-bottom: 2em;
+    padding-bottom: 2em;
 }
 
 

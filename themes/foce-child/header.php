@@ -35,14 +35,14 @@
                 </button>
                 <li class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>"
                         rel="home"><?php bloginfo( 'name' ); ?></a></li>
-                <ul class="open_nav navbar-links">
+                <ul class="open_nav navbar_links">
                     <img class="logo_navbar" src="wp-content/themes/foce-child/assets/images/LOGO.png"
                         alt="logo Fleurs d'oranger & chats errants">
                     <li class="nav_story"><a href="#story">Histoire</a></li>
                     <li class="nav_characters"><a href="#characters">Personnages</a></li>
                     <li class="nav_place"><a href="#place">Lieu</a></li>
                     <li class="nav_studio"><a href="#studio">Studio Koukaki</a></li>
-                    <p class='p_navbar img_navbar'>STUDIO KOUKAKI</p>
+                    <p>STUDIO KOUKAKI</p>
                 </ul>
 
                 </ul>

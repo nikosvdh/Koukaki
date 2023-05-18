@@ -46,8 +46,9 @@
     }
 }
 
-h2::after, .story__article::after, #studio h2::before, #studio h2::after, .site-footer::before, .site-footer::after, .site-footer ul::after, .sunflower, .orchid {
-    animation: flowersRotation 30s infinite linear;
+h2::after, .story__article::after, #studio h2::before, #studio h2::after, .site-footer::before, .site-footer::after, .site-footer ul::after, .sunflower, .orchid, .nav_story::after, .nav_place::before
+{
+    animation: flowersRotation 20s infinite linear;
 }
 
 
@@ -239,7 +240,6 @@ span:not(.title_isvisible){
   }
 
 .site-title {
-    background-color: #FFD5A2;
     max-width: 1440px;
     padding-top: 25px;
     display: block;
@@ -263,7 +263,6 @@ span:not(.title_isvisible){
 	height: 100%;
 	display: none;
 	list-style: none;
-	padding-left: 50px;
 }
 
 .main-navigation li {
@@ -276,25 +275,26 @@ span:not(.title_isvisible){
     font-size: 21px;
 }
 
-/* .main-navigation > p{
+.main-navigation > p{
     font-size: 12px;
     position: absolute;
     top: 80em;
     z-index: 9999;
-} */
+}
 
-.open-nav .second_line {
+
+/* .open_nav .second_line {
     width:0;
     background: transparent;    
   }
 
-.open-nav .first_line {
+.open_nav .first_line {
     transform: rotate(45deg);
   }
 
-.open-nav .third_line {
+.open_nav .third_line {
     transform: rotate(-45deg);
-  }  
+  } */
 
 .logo_navbar {
     width: 154px;
@@ -304,17 +304,8 @@ span:not(.title_isvisible){
     filter: drop-shadow(0px 0px 26.0937px rgba(255, 92, 0, 0.6));
 }
 
-.p_navbar {
-    bottom: 120px;
-    left: 45%;
-}
-  
-.img_navbar {
-    position: absolute;
-}
-
-.navbar-links{
-    background-color: #FFF5E9; 
+.navbar_links {
+    background-color: #FFF5E9;
     padding-top: 140px;
     position: absolute;
     top: 80px;
@@ -324,15 +315,18 @@ span:not(.title_isvisible){
     z-index: 1000;
 }
 
-.navbar-links > li {
+.navbar_links > li {
     max-width: 1440px;
     padding-top: 57px;
 }
 
-.navbar-links li:hover {
+.navbar_links li:hover {
     text-shadow: 0 0 14px #FF5C00;
 }
 
+.nav_studio {
+    margin-bottom: 2em;
+}
 
 /* Ajout des chats et des fleurs dans le menu */
 
@@ -342,20 +336,6 @@ span:not(.title_isvisible){
     max-width: 109px;
     left: 13%;
     top: 0;
-}
-
-.nav_place::after{
-    content: url("../assets/images/cat-grey.png");
-    position: absolute;
-    right: 15%;
-    top: 13px;
-}
-
-.nav_studio::before{
-    content: url("../assets/images/cat-yellow.png");
-    position: absolute;
-    left: 4%;
-    top: 174px;
 }
 
 .nav_story::after{
@@ -375,8 +355,22 @@ span:not(.title_isvisible){
 .nav_place::before{
     content: url("../assets/images/Flower.png");
     position: absolute;
-    left: 6%;
+    left: 13%;
     top: 53px;
+}
+
+.nav_place::after{
+    content: url("../assets/images/cat-grey.png");
+    position: absolute;
+    right: 15%;
+    top: 13px;
+}
+
+.nav_studio::before{
+    content: url("../assets/images/cat-yellow.png");
+    position: absolute;
+    left: 4%;
+    top: 174px;
 }
 
 .nav_studio::after{
@@ -386,4 +380,35 @@ span:not(.title_isvisible){
     right: 0%;
 }
 
+.navbar_links::before{
+    content: url("../assets/images/Orchid-1.png");
+    position: absolute;
+    left: 0px;
+    top: 50px;
+}
+
+
  /* Effet de flottement des chats dans le menu */
+
+@keyframes float {
+    0% {
+        transform: translate(0, 0);
+    }
+    25% {
+        transform: translate(-15px, 11px);
+    }
+    50% {
+        transform: translate(0, 15px);
+    }
+    75% {
+        transform: translate(15px, 10px);
+    }
+    100% {
+        transform: translate(0);
+    }
+}
+
+.nav_story::before, .nav_place::after, .nav_studio::before {
+    animation: float 3s ease-in-out infinite;
+  }
+

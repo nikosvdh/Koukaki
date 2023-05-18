@@ -239,6 +239,22 @@ span:not(.title_isvisible){
     transform:translateY(12px)
   }
 
+/* Transformer toutes les lignes du menu burger en crossmark */
+
+.main-navigation.toggled .first_line {
+    opacity: 1;
+    transform: rotate(-45deg) translate(0px, 0px);
+  }
+
+.main-navigation.toggled .third_line {
+    opacity: 1;
+    transform: rotate(45deg) translate(0px, 0px);
+  }
+
+.main-navigation.toggled .second_line {
+    opacity: 0;
+}
+
 .site-title {
     max-width: 1440px;
     padding-top: 25px;

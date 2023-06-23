@@ -516,6 +516,12 @@ span:not(.title_isvisible){
     margin-top: 300px !important;
    }
 
+    /*  Studio  */
+
+    .sunflower{
+       display: none;
+    }
+
 }
 
 @media all and (max-width: 960px) {
@@ -529,9 +535,12 @@ span:not(.title_isvisible){
         right: 4%;
         top: -80px;
     }
-    .story__article
+    .story__article, #studio p
     {
         font-size: 13px;
+    }
+    #studio h2{
+        font-size: 30px;
     }
 }
 

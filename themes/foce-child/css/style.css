@@ -298,7 +298,7 @@ span:not(.title_isvisible){
 .main-navigation p {
     font-size: 12px;
     position: absolute;
-    top: 54em;
+    top: 55em;
     z-index: 2;
     display: inline;
     left: 45%;
@@ -375,7 +375,7 @@ span:not(.title_isvisible){
     content: url("../assets/images/cat-grey.png");
     position: absolute;
     right: 15%;
-    top: -7px;
+    top: -40px;
     z-index: 2;
 }
 
@@ -383,7 +383,7 @@ span:not(.title_isvisible){
     content: url("../assets/images/cat-yellow.png");
     position: absolute;
     left: 4%;
-    top: 140px;
+    top: 115px;
 }
 
 .nav_studio::after{
@@ -426,3 +426,60 @@ span:not(.title_isvisible){
     animation: float 3s ease-in-out infinite;
   }
 
+
+/* MEDIA QUERIES */
+
+/*  Menu  */
+
+@media all and (max-width: 490px) {
+    .nav_story::after, .navbar-links::before
+    {
+       display: none;
+    }
+    .site-title{
+        padding-top:15px;
+    }
+}
+
+@media all and (max-width: 760px) {
+
+    .banner-video {
+        display: none;
+    }
+    .logo_navbar
+    {
+        left: 35%;
+    }
+
+    .navbar-links
+    {
+        padding-left: 5px !important;
+    }
+    .main-navigation li {
+        font-size: 2.5em;
+    }  
+
+    .nav_place::after, .nav_story::before, .nav_studio::before
+    {
+        display: none;
+    }
+
+    .nav_place::before
+    {
+        top: -10px;
+        left: 5%;
+    }
+
+}
+
+@media all and (max-width: 960px) {
+    .nav_studio::after
+    {
+        display: none;
+    }
+    .nav_story::after
+    {
+        right: 4%;
+        top: -80px;
+    }
+}

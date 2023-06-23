@@ -429,19 +429,30 @@ span:not(.title_isvisible){
 
 /* MEDIA QUERIES */
 
-/*  Menu  */
 
 @media all and (max-width: 490px) {
+    /*  Header  */
     .nav_story::after, .navbar-links::before
     {
        display: none;
     }
-    .site-title{
-        padding-top:15px;
+    .site-title
+    {
+        font-size: 17px !important;
+    }
+    #title 
+    {
+        top: 10%;
+    }
+    .menu-toggle
+    {
+       position: static;
+       margin-top: 20px !important;
     }
 }
 
 @media all and (max-width: 760px) {
+    /*  Header  */
     .banner-video {
         display: none;
     }
@@ -465,7 +476,6 @@ span:not(.title_isvisible){
         top: -10px;
         left: 5%;
     }
-
     .nav_studio {
         padding-bottom: 275px;
     }
@@ -473,6 +483,7 @@ span:not(.title_isvisible){
 }
 
 @media all and (max-width: 960px) {
+    /*  Header  */
     .nav_studio::after
     {
         display: none;

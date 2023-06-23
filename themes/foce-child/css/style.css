@@ -430,59 +430,25 @@ span:not(.title_isvisible){
 
 /* MEDIA QUERIES */
 
-@media all and (max-width: 490px) {
-    /*  Header  */
-    .nav_story::after, .navbar-links::before
+@media all and (max-width: 1260px) {
+    /* Place  */
+    #little_cloud
     {
-       display: none;
-    }
-    .site-title
-    {
-        font-size: 17px !important;
-    }
-    #title 
-    {
-        top: 10%;
-    }
-    .menu-toggle
-    {
-       position: static;
-       margin-top: 20px !important;
-    }
-    .story__article
-    {
-        font-size: 11px !important;
-    }
-    /*  Characters */
-    .main-character h3 
-    {
-        font-size: 20px !important;
-    }
-    /*  Place */
-    .place
-    {
-        font-size: 12px;
-    }
-
-@media all and (max-width: 760px) {
-    /*  Header  */
-    .banner-video {
         display: none;
     }
-    .logo_navbar
-    {
-        left: 35%;
-    }
-    .navbar-links
-    {
-        padding-left: 5px !important;
+}
+
+@media all and (max-width: 960px) {
+    /* Menu toogle */
+    .nav_studio::after, .nav_story::after, .navbar-links::before {
+        display: none;
     }
     .main-navigation li {
-        font-size: 2.5em;
+        font-size: 3em;
     }  
-    .nav_place::after, .nav_story::before, .nav_studio::before
+    .nav_place::after, .nav_story::before
     {
-        display: none;
+        top: -55px;
     }
     .nav_place::before
     {
@@ -490,84 +456,107 @@ span:not(.title_isvisible){
         left: 5%;
     }
     .nav_studio {
-        padding-bottom: 275px;
+        padding-bottom: 225px;
     }
-
-     /*  Characters */
-    .main-character h3 {
-        font-size: 26px;
-        background-position: center;
-        text-align: center;
-    }
-
-    .swiper-wrapper {
-       flex-direction: column;
-    }
-
-    /*  Place  */
-    #big_cloud
+    .logo_navbar
     {
-        display: none;
+        left: 40%;
     }
-
-   .place{
-    margin-top: 300px !important;
-   }
-
-    /*  Studio  */
-
-    .sunflower{
-       display: none;
-    }
-
-}
-
-@media all and (max-width: 960px) {
-    /*  Header  */
-    .nav_studio::after
-    {
-        display: none;
-    }
-    .nav_story::after
-    {
-        right: 4%;
-        top: -80px;
-    }
+    /* Story & Studio */
     .story__article, #studio p
     {
         font-size: 13px;
     }
+     /* Studio */
     #studio h2{
         font-size: 30px;
     }
-
-
-    
+    .sunflower{
+       display: none;
+    }
+    h2::before
+    {
+        display: none;
+    }
+    /* Characters */
+    .swiper-wrapper {
+        flex-direction: column;
+     }
+    .main-character h3 {
+        font-size: 29px;
+        background-position: center;
+        text-align: center;
+    }
+     /* Nomination Oscars  */
     .oscars_div
     {
         flex-direction: column-reverse;
     }
-
     .oscars_img{
         padding: 0 !important;
     }
-
     .oscars_text{
-        color: #404040 !important;
+        color: #C3AF7F !important;
         font-size: 2em;
         background-image: none !important;
         width: 100% !important;
-        margin-bottom: 100px !important;
     }
-
 }
 
-@media all and (max-width: 1260px) {
-    /*  Place  */
-    #little_cloud
+@media all and (max-width: 760px) {
+    /* Header */
+    .banner-video {
+        display: none;
+    }
+    /* Toggle Menu */
+    .nav_place::after, .nav_story::before, .nav_studio::before
     {
         display: none;
     }
+    /* Place */
+    #big_cloud
+    {
+        display: none;
+    }
+}
 
+@media all and (max-width: 490px) {
+    /* Header  */
+    .site-title {
+        font-size: 17px !important;
+    }
+    .menu-toggle {
+       position: static;
+       margin-top: 20px !important;
+    }
+    /* Logo */
+    #title {
+        display: none;
+    }
+    /* Toggle Menu */
+    .main-navigation li {
+        font-size: 2.3em;
+    }  
+    /* Story */
+    .story__article {
+        font-size: 11px !important;
+    }
+    /* Characters */
+    .main-character h3 {
+        font-size: 20px !important;
+    }
+    /* Place */
+    .place {
+        font-size: 12px;
+    }
+    .orchid {
+        display: none;
+    }
+    .logo_navbar {
+        display: none;
+    }
+    .nav_place::before, .nav_characters::after {
+        display: none;
+    }
 }
-}
+

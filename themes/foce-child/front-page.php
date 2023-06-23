@@ -59,7 +59,7 @@ get_header();
             </div>
         </article>
         <article id="place">
-            <div>
+            <div class="place">
                 <h3><span>Le Lieu</span></h3>
                 <p><?php echo get_theme_mod('place'); ?></p>
             </div>

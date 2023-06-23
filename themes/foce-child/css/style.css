@@ -464,8 +464,6 @@ span:not(.title_isvisible){
         font-size: 12px;
     }
 
-}
-
 @media all and (max-width: 760px) {
     /*  Header  */
     .banner-video {
@@ -542,6 +540,26 @@ span:not(.title_isvisible){
     #studio h2{
         font-size: 30px;
     }
+
+
+    
+    .oscars_div
+    {
+        flex-direction: column-reverse;
+    }
+
+    .oscars_img{
+        padding: 0 !important;
+    }
+
+    .oscars_text{
+        color: #404040 !important;
+        font-size: 2em;
+        background-image: none !important;
+        width: 100% !important;
+        margin-bottom: 100px !important;
+    }
+
 }
 
 @media all and (max-width: 1260px) {
@@ -550,4 +568,6 @@ span:not(.title_isvisible){
     {
         display: none;
     }
+
+}
 }

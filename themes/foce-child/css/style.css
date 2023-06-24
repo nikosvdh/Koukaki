@@ -67,15 +67,15 @@ h2::after, .story__article::after, #studio h2::before, #studio h2::after, .site-
 
 .oscars_text {
     font-family: "Quicksand";
-    font-size: 42px;
+    font-size: 39px;
     font-weight: 700;
     height: 280px;
-    width: 723px;
+    width: 745px;
     color: #FFF5E9;
     background-image: url("../assets/images/Rectangle23.png");
     background-repeat: no-repeat;
-    padding-top: 40px;
-    padding-left: 48px;
+    padding-top: 50px;
+    padding-left: 68px;
 }
 
 .oscars_img{
@@ -500,6 +500,7 @@ span:not(.title_isvisible){
         font-size: 2em;
         background-image: none !important;
         width: 100% !important;
+        margin-top: 0px;
     }
 }
 
@@ -537,6 +538,9 @@ span:not(.title_isvisible){
     .main-navigation li {
         font-size: 2.3em;
     }  
+    .nav_studio {
+        padding-bottom: 285px;
+    }
     /* Story */
     .story__article {
         font-size: 11px !important;

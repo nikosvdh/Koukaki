@@ -90,7 +90,7 @@ h2::after, .story__article::after, #studio h2::before, #studio h2::after, .site-
 	top: 33em;
 }
 
-.orchid{
+.orchid {
 	position: absolute;
 	right: -4em;
 	bottom: -9.2em;
@@ -430,6 +430,14 @@ span:not(.title_isvisible){
 
 /* MEDIA QUERIES */
 
+
+@media all and (max-width: 1440px) {
+/* Place  */
+    .orchid {
+        display: none;
+    }
+}
+
 @media all and (max-width: 1260px) {
     /* Place  */
     #little_cloud
@@ -553,9 +561,6 @@ span:not(.title_isvisible){
     .place {
         font-size: 12px;
     }
-    .orchid {
-        display: none;
-    }
     .logo_navbar {
         display: none;
     }
@@ -563,4 +568,3 @@ span:not(.title_isvisible){
         display: none;
     }
 }
-

@@ -40,7 +40,7 @@ const swiper = new Swiper(".swiper", {
     stretch: 0,
     depth: 50,
     modifier: 1,
-    slideShadows: true,
+    slideShadows: true, // activer les ombres
   },
 });
 

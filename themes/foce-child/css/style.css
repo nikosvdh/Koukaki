@@ -434,7 +434,9 @@ span:not(.title_isvisible){
 @media all and (max-width: 1440px) {
 /* Place  */
     .orchid {
-        display: none;
+        position: absolute;
+        right: 2.5em;
+        bottom: -9.2em;
     }
 }
 
@@ -527,6 +529,9 @@ span:not(.title_isvisible){
     {
         display: none;
     }
+    .orchid {
+        display: none;
+     }
 }
 
 @media all and (max-width: 490px) {
